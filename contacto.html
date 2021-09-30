@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Ángel Iglesias Préstamo" />
+        <meta name="description" content="Formulario para realizar aportaciones al contenido de la página o hacer consultas." />
+        <meta name="keywords" content="bert,bos,formulario,consultas,contacto" />
+        <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+        <title>Bert Bos - Contacto</title>
+        <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    </head>
+
+    <body>
+        <nav>
+            <a title="Inicio" tabindex="1" accesskey="I" href="index.html">Inicio</a>
+            <a title="Aportaciones" tabindex="2" accesskey="A" href="aportaciones.html">Aportaciones</a>
+            <a title="Argo" tabindex="3" accesskey="N" href="argo.html">Argo</a>
+            <a title="Contacto" tabindex="4" accesskey="C" href="contacto.html">Contacto</a>
+        </nav>
+
+        <h1>Bert Bos - Contacto</h1>
+
+        <form>
+            <label>Nombre: <input type="text"></label> <br />
+            <label>Apellidos: <input type="text"></label> <br />
+            <label>E-mail: <input placeholder="usario@correo.com" type="text"></label> <br />
+            <fieldset>
+                <legend> Cuál es el motivo de la consulta? </legend>
+                <label> <input type=radio name=size> Aportación a la página </label> <br />
+                <label> <input type=radio name=size> Consulta </label> <br />
+                <label> <input type=radio name=size> Otra </label> <br />
+            </fieldset>
+           <textarea placeholder="Escriba aquí lo que desee..." maxlength=200></textarea> <br />
+            <input type="button" value="Enviar!">
+        </form>
+    </body>
+</html>

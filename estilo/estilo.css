@@ -1,0 +1,22 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #f8f8f2;
+    background-color: #282a36;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+    color: #8be9fd;
+}
+
+li {
+    text-align: left;
+}
