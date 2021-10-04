@@ -26,16 +26,20 @@
         <h1>Bert Bos - Contacto</h1>
 
         <form>
-            <label for="nombre">Nombre: <input type="text" name="nombre"></label> <br />
-            <label for="apellidos">Apellidos: <input type="text" name="apellidos"></label> <br />
-            <label for="email">E-mail: <input type="text" name="email" placeholder="usuario@correo.com"></label> <br />
+            <label for="nombre">Nombre:</label> <br />
+            <input type="text" name="nombre">
+            <label for="apellidos">Apellidos:</label> <br />
+            <input type="text" name="apellidos">
+            <label for="email">E-mail:</label> <br />
+            <input type="text" name="email">
             <fieldset>
                 <legend> Cuál es el motivo de la consulta? </legend>
-                <label for="radio_aportacion"> <input type="radio" name="radio_aportacion"> Aportación a la página </label> <br />
-                <label for="radio_consulta"> <input type="radio" name="radio_consulta"> Consulta </label> <br />
-                <label for="radio_otra"> <input type="radio" name="radio_otra"> Otra </label> <br />
+                <label> <input type="radio" name="radio"> Aportación a la página</label> <br />
+                <label> <input type="radio" name="radio"> Consulta</label> <br />
+                <label> <input type="radio" name="radio"> Otra</label> <br />
             </fieldset>
-            <label for="comentarios"> <textarea placeholder="Escriba aquí lo que desee..." maxlength="200" name="comentarios"></textarea> Comentarios: </label> <br />
+            <label for="comentarios">Comentarios:</label> <br />
+            <textarea maxlength="200" name="comentarios"></textarea>
             <input type="button" value="Enviar!">
         </form>
 
