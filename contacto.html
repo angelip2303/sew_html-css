@@ -27,20 +27,22 @@
 
         <form>
             <label for="nombre">Nombre:</label> <br />
-            <input type="text" name="nombre">
+            <input type="text" name="nombre" aria-label="nombre">
             <label for="apellidos">Apellidos:</label> <br />
-            <input type="text" name="apellidos">
-            <label for="email">E-mail:</label> <br />
-            <input type="text" name="email">
+            <input type="text" name="apellidos" aria-label="apellidos">
+            <label for="email" title="Inserta tu correo en el formato: usuario@correo.es">E-mail:</label> <br />
+            <input type="text" name="email" aria-label="correo electrónico">
             <fieldset>
                 <legend> Cuál es el motivo de la consulta? </legend>
-                <label> <input type="radio" name="radio"> Aportación a la página</label> <br />
-                <label> <input type="radio" name="radio"> Consulta</label> <br />
-                <label> <input type="radio" name="radio"> Otra</label> <br />
+                <ul role="radiogroup">
+                    <label> <input type="radio" name="radio" value="aportacion" aria-label="deseo hacer una aportación"> Aportación a la página</label> <br />
+                    <label> <input type="radio" name="radio" value="consulta" aria-label="deseo hacer una consulta"> Consulta</label> <br />
+                    <label> <input type="radio" name="radio" value="otra" aria-label="deseo otra"> Otra</label> <br />
+                </ul>
             </fieldset>
             <label for="comentarios">Comentarios:</label> <br />
-            <textarea maxlength="200" name="comentarios"></textarea>
-            <input type="button" value="Enviar!">
+            <textarea maxlength="200" name="comentarios" aria-label="inserte su comentario"></textarea>
+            <input type="button" value="Enviar!" aria-label="enviar formulario">
         </form>
 
         <footer>
