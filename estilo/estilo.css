@@ -1,22 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    /* Fonts */
     font-family: 'Courier New', Courier, monospace;
+
+    /* Colors */
     color: #f8f8f2;
     background-color: #282a36;
-    text-align: justify;
+
+    /* Sizing */
+    margin:0;
+    padding:0;
+
+    /* Text */
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 h1 {
     text-align: center;
 }
 
-nav {
-    text-align: center;
+section {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
 }
 
-a {
-    color: #8be9fd;
+section p{
+    font-size: 1.1em;
+}
+
+section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 li {
     text-align: left;
+}
+
+li img {
+    margin-left: 2em;
+    width: 20%;
+}
+
+header {
+    /* Colors */
+    background-color: #f8f8f2;
+
+    /* Positioning */
+    padding: 0em 2em;
+    overflow: hidden;
+
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    /* Colors */
+    color: #282a36;
+}
+
+nav {
+    /* Fonts */
+    font-family: Verdana, sans-serif;
+}
+
+nav a { 
+    /* Colors */
+    color: #282a36;
+
+    /* Positioning */
+    text-align: center;
+    padding: 1.2em;
+
+    /* Text */
+    text-decoration: none; /* quitamos las líneas de abajo */
+    font-size: 1em;
+} /* enlaces del nav */
+
+nav a:hover {
+    background-color: #44475a;
+    color: #f8f8f2;
+} /* al ponerse encima de un elemento del nav */
+
+nav a.active {
+    text-decoration: underline;
+} /* al hacer click a un elemento del nav*/
+
+nav a:active {
+    background-color: #bd93f9;
+    color:#f8f8f2;
+}
+
+.banner {
+    /* Image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../multimedia/bert_bos-portada.jpg");
+
+    /* Sizing */
+    width: 100%;
+    height: 100vh;
+
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Background styles */
+    background-attachment: fixed; /* create the parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-text {
+    /* Colors */
+    color: #f8f8f2;
+
+    /* Positioning */
+    text-align: center;
+    top: 50%;
+    left: 50%;
+} /* al hacer click a un elemento del nav*/
+
+form {
+    /* Colors */
+    background-color: #44475a;
+
+    /* Sizing */
+    width: 50%;
+    height: 50%;
+    padding: 4em 4em;
+    margin: auto auto;
+    margin-bottom: 4em;
+}
+
+input {
+    /* Colors */
+    background-color: #fbfbfb; 
+
+    /* Sizing */
+    width: 100%; 
+    height: 2.2em;
+    border: none;
+    margin-bottom: 2em;
+}
+
+input[type=text]:focus {
+    outline: 0.2em solid #bd93f9;
+}
+
+input[type=radio] {
+    height: 1.1em;
+    width: 1.1em;
+    vertical-align: baseline;
+}
+
+input[type=button] {
+    /* Colors */
+    background-color: #50fa7b;
+    color: #282a36;
+
+    /* Positioning */
+    padding: 1em 2em;
+    height: auto;
+    margin-bottom: 0em;
+    display: inline-block;
+
+    /* Text */
+    border: 0.2em solid #50fa7b;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+input[type=button]:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #f8f8f2;
+}
+
+input[type=button]:active {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.2em solid #ff79c6;
+    color: #ff79c6;
+}
+
+legend {
+    /* Colors */
+    background-color: #282a36;
+    color: #f8f8f2;
+
+    /* Sizing */
+    padding: 0.3em 0.6em;
+}
+
+fieldset {
+    width: auto;
+    margin-bottom: 2em;
+}
+
+textarea {
+    /* Colors */
+    background-color: #fbfbfb; 
+
+    /* Sizing */
+    width: 100%;
+    max-width: 100%;
+    height: 40%;
+    border: none;
+    margin-bottom: 2em;
+}
+
+textarea:focus {
+    outline: 0.2em solid #bd93f9;
+}
+
+table {
+    /* Sizing */
+    table-layout: auto;
+    width: 50%;
+
+    /* Border */
+    border: 0.2em solid #fbfbfb;
+    border-collapse: collapse;
+}
+
+th {
+    /* Colors */
+    background-color: rgba(248, 248, 242, 0.15);
+
+    /* Border */
+    border: 0.1em solid #fbfbfb;
+    border-collapse: collapse;
+
+    /* Text */
+    text-align: center;
+    font-size: 1em;
+}
+
+td {
+    /* Border */
+    border: 0.1em solid #fbfbfb;
+    border-collapse: collapse;
+
+    /* Text */
+    text-align: center;
+}
+
+footer {
+    /* Colors */
+    background-color: #f8f8f2;
+    color: #282a36;
+
+    /* Positioning */
+    padding: 0em 2em;
+    overflow: hidden;
+
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -12,27 +12,36 @@
     </head>
 
     <body>
-        <nav>
-            <a title="Inicio" tabindex="1" accesskey="I" href="index.html">Inicio</a>
-            <a title="Aportaciones" tabindex="2" accesskey="A" href="aportaciones.html">Aportaciones</a>
-            <a title="Argo" tabindex="3" accesskey="N" href="argo.html">Argo</a>
-            <a title="Contacto" tabindex="4" accesskey="C" href="contacto.html">Contacto</a>
-        </nav>
+        <header>
+            <h2>Bert Bos</h2>
+            
+            <nav>
+                <a tabindex="1" accesskey="I" href="index.html">Inicio</a>
+                <a tabindex="2" accesskey="A" href="aportaciones.html">Aportaciones</a>
+                <a tabindex="3" accesskey="N" href="argo.html">Argo</a>
+                <a class="active" tabindex="4" accesskey="C" href="contacto.html">Contacto</a>
+            </nav>
+        </header>
 
         <h1>Bert Bos - Contacto</h1>
 
         <form>
             <label>Nombre: <input type="text"></label> <br />
             <label>Apellidos: <input type="text"></label> <br />
-            <label>E-mail: <input placeholder="usario@correo.com" type="text"></label> <br />
+            <label>E-mail: <input placeholder="usuario@correo.com" type="text"></label> <br />
             <fieldset>
                 <legend> Cuál es el motivo de la consulta? </legend>
                 <label> <input type=radio name=size> Aportación a la página </label> <br />
                 <label> <input type=radio name=size> Consulta </label> <br />
                 <label> <input type=radio name=size> Otra </label> <br />
             </fieldset>
-           <textarea placeholder="Escriba aquí lo que desee..." maxlength=200></textarea> <br />
+            <textarea placeholder="Escriba aquí lo que desee..." maxlength=200></textarea> <br />
             <input type="button" value="Enviar!">
         </form>
+
+        <footer>
+            <p>Ángel Iglesias Préstamo</p>
+            <p><a href="mailto:uo270534@uniovi.es">uo270534@uniovi.es</a></p>
+        </footer>
     </body>
 </html>
