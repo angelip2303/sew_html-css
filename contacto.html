@@ -26,12 +26,9 @@
         <h1>Bert Bos - Contacto</h1>
 
         <form>
-            <label for="nombre">Nombre:</label> <br />
-            <input type="text" name="nombre" aria-label="nombre">
-            <label for="apellidos">Apellidos:</label> <br />
-            <input type="text" name="apellidos" aria-label="apellidos">
-            <label for="email" title="Inserta tu correo en el formato: usuario@correo.es">E-mail:</label> <br />
-            <input type="text" name="email" aria-label="correo electrónico">
+            <label>Nombre: <input type="text" name="nombre" aria-label="nombre"></label> <br />
+            <label>Apellidos: <input type="text" name="apellidos" aria-label="apellidos"></label> <br />
+            <label title="Inserta tu correo en el formato: usuario@correo.es">E-mail: <input type="text" name="email" aria-label="correo electrónico"></label> <br />
             <fieldset>
                 <legend> Cuál es el motivo de la consulta? </legend>
                 <ul role="radiogroup">
@@ -40,8 +37,7 @@
                     <label> <input type="radio" name="radio" value="otra" aria-label="deseo otra"> Otra</label> <br />
                 </ul>
             </fieldset>
-            <label for="comentarios">Comentarios:</label> <br />
-            <textarea maxlength="200" name="comentarios" aria-label="inserte su comentario"></textarea>
+            <label>Comentarios: <textarea maxlength="200" name="comentarios" aria-label="inserte su comentario"></textarea></label> <br />
             <input type="button" value="Enviar!" aria-label="enviar formulario">
         </form>
 
