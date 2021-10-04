@@ -26,16 +26,16 @@
         <h1>Bert Bos - Contacto</h1>
 
         <form>
-            <label>Nombre: <input type="text"></label> <br />
-            <label>Apellidos: <input type="text"></label> <br />
-            <label>E-mail: <input placeholder="usuario@correo.com" type="text"></label> <br />
+            <label for="nombre">Nombre: <input type="text" name="nombre"></label> <br />
+            <label for="apellidos">Apellidos: <input type="text" name="apellidos"></label> <br />
+            <label for="email">E-mail: <input type="text" name="email" placeholder="usuario@correo.com"></label> <br />
             <fieldset>
                 <legend> Cuál es el motivo de la consulta? </legend>
-                <label> <input type="radio"> Aportación a la página </label> <br />
-                <label> <input type="radio"> Consulta </label> <br />
-                <label> <input type="radio"> Otra </label> <br />
+                <label for="radio_aportacion"> <input type="radio" name="radio_aportacion"> Aportación a la página </label> <br />
+                <label for="radio_consulta"> <input type="radio" name="radio_consulta"> Consulta </label> <br />
+                <label for="radio_otra"> <input type="radio" name="radio_otra"> Otra </label> <br />
             </fieldset>
-            <label> <textarea placeholder="Escriba aquí lo que desee..." maxlength="200"></textarea> Comentarios: </label> <br />
+            <label for="comentarios"> <textarea placeholder="Escriba aquí lo que desee..." maxlength="200" name="comentarios"></textarea> Comentarios: </label> <br />
             <input type="button" value="Enviar!">
         </form>
 
