@@ -53,6 +53,7 @@ li img {
 header {
     /* Colors */
     background-color: #f8f8f2;
+    color: #282a36;
 
     /* Positioning */
     padding: 0em 2em;
@@ -64,18 +65,14 @@ header {
     align-items: center;
 }
 
-header h2 {
-    /* Colors */
-    color: #282a36;
-}
-
 nav {
     /* Fonts */
     font-family: Verdana, sans-serif;
 }
 
-nav a { 
+nav a {
     /* Colors */
+    background-color: transparent;
     color: #282a36;
 
     /* Positioning */
@@ -123,6 +120,7 @@ nav a:active {
 
 .banner-text {
     /* Colors */
+    background-color: transparent;
     color: #f8f8f2;
 
     /* Positioning */
@@ -163,18 +161,19 @@ nav a:active {
 form {
     /* Colors */
     background-color: #44475a;
+    color: #f8f8f2;
 
     /* Sizing */
     width: 50%;
     height: 50%;
     padding: 4em 4em;
-    margin: auto auto;
-    margin-bottom: 4em;
+    margin: auto auto 5% auto;
 }
 
 input {
     /* Colors */
     background-color: #fbfbfb; 
+    color:#282a36;
 
     /* Sizing */
     width: 100%; 
@@ -194,12 +193,6 @@ input[type=radio] {
     margin-bottom: 0em;
 }
 
-input[type=submit]:active {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0.2em solid #ff79c6;
-    color: #ff79c6;
-}
-
 legend {
     /* Colors */
     background-color: #282a36;
@@ -217,6 +210,7 @@ fieldset {
 textarea {
     /* Colors */
     background-color: #fbfbfb; 
+    color: #f8f8f2;
 
     /* Sizing */
     width: 100%;
@@ -243,6 +237,7 @@ table {
 th {
     /* Colors */
     background-color: rgba(248, 248, 242, 0.15);
+    color: #fbfbfb;
 
     /* Border */
     border: 0.1em solid #fbfbfb;
