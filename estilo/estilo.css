@@ -131,6 +131,35 @@ nav a:active {
     left: 50%;
 } /* al hacer click a un elemento del nav*/
 
+.banner-text a, input[type=submit] {
+    /* Colors */
+    background-color: #50fa7b;
+    color: #282a36;
+
+    /* Positioning */
+    padding: 1em 2em;
+    height: auto;
+    margin-bottom: 0em;
+    display: inline-block;
+
+    /* Text */
+    border: 0.2em solid #50fa7b;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.banner-text a:hover, input[type=submit]:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #f8f8f2;
+}
+
+.banner-text a:active, input[type=submit]:active {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.2em solid #ff79c6;
+    color: #ff79c6;
+}
+
 form {
     /* Colors */
     background-color: #44475a;
@@ -162,32 +191,10 @@ input[type=radio] {
     height: 1.1em;
     width: 1.1em;
     vertical-align: baseline;
-}
-
-input[type=button] {
-    /* Colors */
-    background-color: #50fa7b;
-    color: #282a36;
-
-    /* Positioning */
-    padding: 1em 2em;
-    height: auto;
     margin-bottom: 0em;
-    display: inline-block;
-
-    /* Text */
-    border: 0.2em solid #50fa7b;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2em;
 }
 
-input[type=button]:hover {
-    background-color: rgba(0, 0, 0, 0);
-    color: #f8f8f2;
-}
-
-input[type=button]:active {
+input[type=submit]:active {
     background-color: rgba(0, 0, 0, 0);
     border: 0.2em solid #ff79c6;
     color: #ff79c6;
@@ -226,7 +233,7 @@ textarea:focus {
 table {
     /* Sizing */
     table-layout: auto;
-    width: 50%;
+    width: 100%;
 
     /* Border */
     border: 0.2em solid #fbfbfb;
