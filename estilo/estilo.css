@@ -69,6 +69,11 @@ header {
 nav {
     /* Fonts */
     font-family: Verdana, sans-serif;
+
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav a {
