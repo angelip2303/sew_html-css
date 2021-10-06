@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     /* Fonts */
     font-family: 'Courier New', Courier, monospace;
@@ -50,7 +46,10 @@ li img {
     width: 20%;
 }
 
-header {
+header, footer {
+    /* Fonts */
+    font-family: Verdana, sans-serif;
+
     /* Colors */
     background-color: #f8f8f2;
     color: #282a36;
@@ -62,14 +61,21 @@ header {
     /* Flexbox */
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-nav {
-    /* Fonts */
-    font-family: Verdana, sans-serif;
+header a {
+    /* Text */
+    text-decoration: none; /* quitamos las líneas de abajo */
+    font-size: 2em;
 
+    /* Colors */
+    background-color: #f8f8f2;
+    color: #282a36;
+}
+
+nav {
     /* Flexbox */
     display: flex;
     justify-content: center;
@@ -82,7 +88,6 @@ nav a {
     color: #282a36;
 
     /* Positioning */
-    text-align: center;
     padding: 1em 1em;
 
     /* Text */
@@ -95,18 +100,15 @@ nav a:hover {
     color: #f8f8f2;
 } /* al ponerse encima de un elemento del nav */
 
-nav a.active {
-    text-decoration: underline;
-} /* al hacer click a un elemento del nav*/
-
 nav a:active {
     background-color: #bd93f9;
     color:#f8f8f2;
-}
+} /* al hacer click a un elemento del nav*/
 
-.banner {
+header ~ div {
     /* Image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../multimedia/bert_bos-portada.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url("../multimedia/bert_bos-portada.jpg");
 
     /* Sizing */
     width: 100%;
@@ -124,7 +126,7 @@ nav a:active {
     background-size: cover;
 }
 
-.banner-text {
+header ~ div div {
     /* Colors */
     background-color: transparent;
     color: #f8f8f2;
@@ -135,13 +137,13 @@ nav a:active {
     left: 50%;
 } /* al hacer click a un elemento del nav*/
 
-.banner-text a, input[type=submit] {
+header ~ div div  a, input[type=submit] {
     /* Colors */
     background-color: #50fa7b;
     color: #282a36;
 
     /* Positioning */
-    padding: 3.5% 7%;
+    padding: 3% 5%;
     height: auto;
     margin-bottom: 0em;
     display: inline-block;
@@ -150,15 +152,15 @@ nav a:active {
     border: 0.2em solid #50fa7b;
     text-align: center;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
-.banner-text a:hover, input[type=submit]:hover {
+header ~ div div  a:hover, input[type=submit]:hover {
     background-color: rgba(0, 0, 0, 0);
     color: #f8f8f2;
 }
 
-.banner-text a:active, input[type=submit]:active {
+header ~ div div  a:active, input[type=submit]:active {
     background-color: rgba(0, 0, 0, 0);
     border: 0.2em solid #ff79c6;
     color: #ff79c6;
@@ -261,20 +263,4 @@ td {
 
     /* Text */
     text-align: center;
-}
-
-footer {
-    /* Colors */
-    background-color: #f8f8f2;
-    color: #282a36;
-
-    /* Positioning */
-    padding: 0em 2em;
-    overflow: hidden;
-
-    /* Flexbox */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
 }
