@@ -29,6 +29,10 @@ section p{
     font-size: 1.1em;
 }
 
+li a {
+    color: #8be9fd;
+}
+
 header, footer {
     /* Fonts */
     font-family: Verdana, sans-serif;
@@ -66,7 +70,6 @@ nav {
 
 nav a {
     /* Colors */
-    background-color: transparent;
     color: #282a36;
 
     /* Positioning */
@@ -110,7 +113,6 @@ header ~ div {
 
 header ~ div div {
     /* Colors */
-    background-color: transparent;
     color: #f8f8f2;
 
     /* Positioning */
@@ -140,18 +142,17 @@ header ~ div div a, input[type=submit] {
     margin-bottom: 0em;
 
     /* Text */
+    font-family: Verdana, sans-serif;
     border: 0.2em solid #50fa7b;
     text-decoration: none;
     font-size: 1.5em;
 }
 
 header ~ div div  a:hover, input[type=submit]:hover {
-    background-color: transparent;
     color: #f8f8f2;
 }
 
 header ~ div div  a:active, input[type=submit]:active {
-    background-color: transparent;
     border: 0.2em solid #ff79c6;
     color: #ff79c6;
 }
@@ -207,7 +208,7 @@ fieldset {
 textarea {
     /* Colors */
     background-color: #fbfbfb; 
-    color: #f8f8f2;
+    color: #282a36;
 
     /* Sizing */
     width: 100%;
