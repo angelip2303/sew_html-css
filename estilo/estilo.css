@@ -1,6 +1,6 @@
 body {
     /* Fonts */
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Courier, monospace;
 
     /* Colors */
     color: #f8f8f2;
@@ -20,7 +20,6 @@ h1 {
 }
 
 section {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 65%;
@@ -28,22 +27,6 @@ section {
 
 section p{
     font-size: 1.1em;
-}
-
-section img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-li {
-    text-align: left;
-}
-
-li img {
-    margin-left: 2em;
-    width: 20%;
 }
 
 header, footer {
@@ -68,7 +51,7 @@ header, footer {
 header a {
     /* Text */
     text-decoration: none; /* quitamos las líneas de abajo */
-    font-size: 2em;
+    font-size: 1.5em;
 
     /* Colors */
     background-color: #f8f8f2;
@@ -78,7 +61,6 @@ header a {
 nav {
     /* Flexbox */
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -108,7 +90,7 @@ nav a:active {
 header ~ div {
     /* Image */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url("../multimedia/bert_bos-portada.jpg");
+        url("../multimedia/margaret-portada.png");
 
     /* Sizing */
     width: 100%;
@@ -132,12 +114,22 @@ header ~ div div {
     color: #f8f8f2;
 
     /* Positioning */
-    text-align: center;
-    top: 50%;
-    left: 50%;
+    text-align:center;
+    
 } /* al hacer click a un elemento del nav*/
 
-header ~ div div  a, input[type=submit] {
+header ~ div div h1 {
+    font-size: 3em;
+    margin-bottom: 0em;
+}
+
+header ~ div div h2 {
+    font-size: 1.1em;
+    margin-bottom: 20%;
+    
+}
+
+header ~ div div a, input[type=submit] {
     /* Colors */
     background-color: #50fa7b;
     color: #282a36;
@@ -146,22 +138,20 @@ header ~ div div  a, input[type=submit] {
     padding: 3% 5%;
     height: auto;
     margin-bottom: 0em;
-    display: inline-block;
 
     /* Text */
     border: 0.2em solid #50fa7b;
-    text-align: center;
     text-decoration: none;
     font-size: 1.5em;
 }
 
 header ~ div div  a:hover, input[type=submit]:hover {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     color: #f8f8f2;
 }
 
 header ~ div div  a:active, input[type=submit]:active {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     border: 0.2em solid #ff79c6;
     color: #ff79c6;
 }
@@ -197,7 +187,6 @@ input[type=text]:focus {
 input[type=radio] {
     height: 1.1em;
     width: 1.1em;
-    vertical-align: baseline;
     margin-bottom: 0em;
 }
 
@@ -240,6 +229,9 @@ table {
     /* Border */
     border: 0.2em solid #fbfbfb;
     border-collapse: collapse;
+
+     /* Text */
+    text-align: center;
 }
 
 th {
@@ -252,7 +244,6 @@ th {
     border-collapse: collapse;
 
     /* Text */
-    text-align: center;
     font-size: 1em;
 }
 
@@ -260,7 +251,4 @@ td {
     /* Border */
     border: 0.1em solid #fbfbfb;
     border-collapse: collapse;
-
-    /* Text */
-    text-align: center;
 }
