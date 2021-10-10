@@ -9,35 +9,38 @@
         <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
         <title>Margaret Hamilton - Contacto</title>
         <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="estilo/formulario.css" />
     </head>
 
     <body>
         <header>
-            <a accesskey="M" href="index.html">Margaret Hamilton</a>
+            <h1>Margaret Hamilton</h1>
             
             <nav>
                 <a tabindex="1" accesskey="I" href="index.html">Inicio</a>
                 <a tabindex="2" accesskey="A" href="aportaciones.html">Aportaciones</a>
-                <a tabindex="3" accesskey="N" href="apollo.html">Apollo</a>
+                <a tabindex="3" accesskey="N" href="Apolo.html">Apolo</a>
                 <a tabindex="4" accesskey="C" href="contacto.html">Contacto</a>
             </nav>
         </header>
 
-        <h1>Margaret Hamilton - Contacto</h1>
+        <main>
+            <h2>Contacto</h2>
 
-        <form>
-            <label for="nombre">Nombre: <input type="text" id="nombre" name="nombre"></label> <br />
-            <label for="apellidos">Apellidos: <input type="text" id="apellidos" name="apellidos"></label> <br />
-            <label title="Inserta tu correo en el formato: usuario@correo.es" for="correo">E-mail: <input type="text" id="correo" name="email"></label> <br />
-            <fieldset>
-                <legend> ¿Cuál es el motivo de la consulta? </legend>
-                <label for="aportacion" title="deseo hacer una aportación"> <input type="radio" id="aportacion" name="radio" value="aportacion"> Aportación a la página</label> <br />
-                <label for="consulta" title="deseo hacer una consulta"> <input type="radio" id="consulta" name="radio" value="consulta"> Consulta</label> <br />
-                <label for="otros" title="deseo otra"> <input type="radio" id="otros" name="radio" value="otra"> Otra</label> <br />
-            </fieldset>
-            <label for="comentarios" title="Inserte su comentario">Comentarios: <textarea maxlength="200" id="comentarios" ></textarea></label> <br />
-            <input type="submit" value="Enviar!" title="Enviar formulario">
-        </form>
+            <form>
+                <label for="nombre"> Nombre y Apellidos: <input type="text" id="nombre" name="nombre"></label> <br />
+                <label for="edad"> Edad: <input type="number" id="edad" name="edad"></label> <br />
+                <label title="Inserta tu correo en el formato: usuario@correo.es" for="correo"> E-mail: <input type="text" id="correo" name="email"></label> <br />
+                <fieldset>
+                    <legend> ¿Cuál es el motivo de la consulta? </legend>
+                    <label for="aportacion" title="deseo hacer una aportación"> <input type="radio" id="aportacion" name="radio" value="aportacion"> Aportación a la página</label> <br />
+                    <label for="consulta" title="deseo hacer una consulta"> <input type="radio" id="consulta" name="radio" value="consulta"> Consulta</label> <br />
+                    <label for="otros" title="deseo otra"> <input type="radio" id="otros" name="radio" value="otra"> Otra</label> <br />
+                </fieldset>
+                <label for="comentarios" title="Inserte su comentario"> Comentarios: <textarea maxlength="200" id="comentarios" ></textarea></label> <br />
+                <input type="submit" value="Enviar!" title="Enviar formulario">
+            </form>
+        </main>
 
         <footer>
             <p>Ángel Iglesias Préstamo</p>
