@@ -114,8 +114,9 @@ video, audio, img {
 /*Especificidad: 001*/
 table {
     /* Sizing */
-    table-layout:fixed;
-    width: 100%;
+    width: fit-content;
+    display: block; /* estoy haciendo que sea "scrollable" */
+    overflow: auto;
 
     /* Border */
     border: 0.2em solid #fbfbfb;
@@ -137,6 +138,7 @@ th {
 
     /* Text */
     font-size: 1em;
+    font-weight: bold;
 }
 
 /*Especificidad: 001*/
@@ -144,4 +146,16 @@ td {
     /* Border */
     border: 0.1em solid #fbfbfb;
     border-collapse: collapse;
+}
+
+/*Especificidad: 001*/
+dt {
+    font-weight: bold;
+}
+
+/*Especificidad: 001*/
+dd {
+    font-size: 0.9em;
+    margin-left: auto;
+    margin-bottom: 1em;
 }
