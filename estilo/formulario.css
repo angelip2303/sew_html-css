@@ -26,8 +26,9 @@ input, textarea {
 
 /*Especificidad: 021*/
 /*Especificidad: 021*/
+/*Especificidad: 021*/
 /*Especificidad: 011*/
-input[type=text]:focus, input[type=number]:focus, textarea:focus {
+input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, textarea:focus {
     outline: 0.2em solid #bd93f9;
 }
 
