@@ -1,0 +1,87 @@
+/*Especificidad: 001*/
+form {
+    /* Colors */
+    background-color: #44475a;
+    color: #f8f8f2;
+
+    /* Sizing */
+    width: 60%;
+    height: 60%;
+    padding: 5%;
+    margin: auto auto 5% auto;
+}
+
+/*Especificidad: 001*/
+input, textarea {
+    /* Colors */
+    background-color: #fbfbfb; 
+    color:#282a36;
+
+    /* Sizing */
+    width: 100%; 
+    height: 2.5em;
+    border: none;
+    margin-bottom: 2em;
+}
+
+/*Especificidad: 021*/
+/*Especificidad: 021*/
+/*Especificidad: 021*/
+/*Especificidad: 011*/
+input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, textarea:focus {
+    outline: 0.2em solid #bd93f9;
+}
+
+/*Especificidad: 011*/
+input[type=radio] {
+    height: 1.1em;
+    width: 1.1em;
+    margin-bottom: 0;
+}
+
+/*Especificidad: 001*/
+legend {
+    /* Colors */
+    background-color: #282a36;
+    color: #f8f8f2;
+
+    /* Sizing */
+    padding: 0.3em 0.6em;
+}
+
+/*Especificidad: 001*/
+fieldset {
+    margin-bottom: 2em;
+}
+
+/*Especificidad: 011*/
+input[type=submit] {
+    /* Colors */
+    background-color: #50fa7b;
+    color: #282a36;
+
+    /* Positioning */
+    padding: 3% 5%;
+    height: auto;
+    margin-bottom: 0em;
+
+    /* Text */
+    font-family: Verdana, sans-serif;
+    border: 0.2em solid #50fa7b;
+    text-decoration-line: none;
+    font-size: 1.5em;
+}
+
+/*Especificidad: 021*/
+input[type=submit]:hover {
+    background-color: #44475a;
+    color: #f8f8f2;
+}
+
+/*Especificidad: 021*/
+input[type=submit]:active {
+    background-color: #44475a;
+    color: #ff79c6;
+
+    border: 0.2em solid #ff79c6;
+}
