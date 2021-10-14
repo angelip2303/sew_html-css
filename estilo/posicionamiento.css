@@ -25,5 +25,5 @@ blockquote p {
 /*Especificidad: 001*/
 table {
     display: block; /* estoy haciendo que sea "scrollable" */
-    overflow: auto;
+    overflow-x: auto;
 }

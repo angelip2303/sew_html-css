@@ -46,6 +46,7 @@ header, footer {
 header img{
     width: 100%;
     height: 100vh;
+    object-fit: cover;
 }
 
 /*Especificidad: 002*/
@@ -96,41 +97,6 @@ blockquote p {
 /*Especificidad: 001*/
 video, audio, img {
     width: 100%;
-}
-
-/*Especificidad: 001*/
-table {
-    /* Sizing */
-    width: fit-content;
-
-    /* Border */
-    border: 0.2em solid #fbfbfb;
-    border-collapse: collapse;
-
-     /* Text */
-    text-align: center;
-}
-
-/*Especificidad: 001*/
-th {
-    /* Colors */
-    background-color: rgba(248, 248, 242, 0.15);
-    color: #fbfbfb;
-
-    /* Border */
-    border: 0.1em solid #fbfbfb;
-    border-collapse: collapse;
-
-    /* Text */
-    font-size: 1em;
-    font-weight: bold;
-}
-
-/*Especificidad: 001*/
-td {
-    /* Border */
-    border: 0.1em solid #fbfbfb;
-    border-collapse: collapse;
 }
 
 /*Especificidad: 001*/
