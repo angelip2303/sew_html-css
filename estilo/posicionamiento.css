@@ -1,0 +1,29 @@
+/*Especificidad: 001*/
+body {
+    display: block;
+}
+
+/*Especificidad: 001*/
+header, footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Especificidad: 002*/
+blockquote p {
+    align-self: center;
+}
+
+/*Especificidad: 001*/
+table {
+    display: block; /* estoy haciendo que sea "scrollable" */
+    overflow: auto;
+}
