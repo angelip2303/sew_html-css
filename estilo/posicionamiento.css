@@ -1,9 +1,4 @@
 /*Especificidad: 001*/
-body {
-    display: block;
-}
-
-/*Especificidad: 001*/
 header, footer {
     display: flex;
     justify-content: space-evenly;
@@ -11,6 +6,7 @@ header, footer {
     flex-wrap: wrap;
 }
 
+/*Especificidad: 001*/
 nav {
     display: flex;
     flex-wrap: wrap;
